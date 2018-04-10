@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<persona>
+		<nome>Nome1</nome>
+		<cognome>Cognome1</cognome>
+		<numero>123</numero>
+	</persona>
+	
+	<persona>
+		<nome>Nome2</nome>
+		<cognome>Cognome2</cognome>
+		<numero>12321</numero>
+	</persona>
+
+	<persona>
+		<nome>Nome3</nome>
+		<cognome>Cognome3</cognome>
+		<numero>1232112321</numero>
+	</persona>
+ </items>

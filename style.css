@@ -1,0 +1,28 @@
+body{
+	background-color:#DADADA;
+}
+
+.persona {
+	border-radius: 5px;
+	padding: 10px 5px 10px 5px;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: verdana;
+	vertical-align: middle;
+}
+
+span {
+	margin-left: 20px;
+	float: left;
+}
+
+a {
+   float: left;
+}
+
+h1 {
+	font-family: Arial;
+	color: #f00;
+	text-align: center;
+	margin-bottom: 50px;	
+}
