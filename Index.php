@@ -9,27 +9,23 @@
 			<meta	name='keywords'			content='Rubrica'>
 			<meta	name='author'			content='Davide Castellani'>
 			<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>	<!--Uso libreria jquery-->
-
 			<title> Rubrica by DC</title>
 			<script type='text/javascript' src='js.js'></script>
-			<script>
-				
-			</script>
 		</head>
 		<body>
 			<div id='page'>
 				<h1>Rubrica</h1>																						<!--Titolo-->
-				<div id='Rubrica'></div>																				<!--Dove iserire i dati-->
+				<div id='Rubrica'></div>
+				<?php
+					include('contacts.php')
+				?>																				<!--Dove iserire i dati-->
 				<center>
-					<button class='button' style='vertical-align:middle' onclick='form()'>
+					<button class='button' style='vertical-align:middle' onclick='form_add()'>
 							<span>
 								Aggiungi contatto
 							</span>
 					</button>
 				</center>
 			</div>
-			<?php
-				include('contacts.php')
-			?>
 		</body>
 	</html>
