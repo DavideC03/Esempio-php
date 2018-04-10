@@ -11,30 +11,7 @@
 			<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>	<!--Uso libreria jquery-->
 
 			<title> Rubrica by DC</title>
-			<script type='text/javascript' src='js.js'></script>															<!--Integrazione js.js-->
-			<script type='text/javascript'>																					//Lettura e scrittura delle informazioni nel file xml (xmlItems.xml)-->
-				$(document).ready(function(){
-				$.ajax({
-				type: 'GET',
-				url: 'xmlItems.xml',
-				dataType: 'xml',
-				success: function(xml) {
-					var select = $('#Rubrica');
-					$(xml).find('persona').each(function(){
-						var Nome = 		$(this).find('nome').text();
-						var Cognome = 	$(this).find('cognome').text();
-						var Numero = 	$(this).find('numero').text();
-						var color=generatecolor();
-						select.append("<div class='persona' style='background-color:"+color+';'+"'>"+
-							"<span><b>Nome 		: </b><i>" + Nome 		+ "</i></span><br/>" +
-							"<span><b>Cognome 	: </b><i>" + Cognome 	+ "</i></span><br/>" +
-							"<span><b>Numero 	: </b><i>" + Numero 	+ "</i></span><br/>" +
-							"</div><br/><div class='clear'></div>");
-					});
-					}
-				});
-				});
-			</script>
+			<script type='text/javascript' src='js.js'></script>
 			<script>
 				
 			</script>
@@ -51,5 +28,8 @@
 					</button>
 				</center>
 			</div>
+			<?php
+				include('contacts.php')
+			?>
 		</body>
 	</html>

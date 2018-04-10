@@ -1,0 +1,272 @@
+<!--															<!--Integrazione js.js-->
+			<script type='text/javascript'>																					//Lettura e scrittura delle informazioni nel file xml (xmlItems.xml)-->
+				$(document).ready(function(){
+				$.ajax({
+				type: 'GET',
+				url: 'xmlItems.xml',
+				dataType: 'xml',
+				success: function(xml) {
+					var select = $('#Rubrica');
+					$(xml).find('persona').each(function(){
+						var Nome = 		$(this).find('nome').text();
+						var Cognome = 	$(this).find('cognome').text();
+						var Numero = 	$(this).find('numero').text();
+						var color=generatecolor();
+						select.append("<div class='persona' style='background-color:"+color+';'+"'>"+
+							"<span><b>Nome 		: </b><i>" + Nome 		+ "</i></span><br/>" +
+							"<span><b>Cognome 	: </b><i>" + Cognome 	+ "</i></span><br/>" +
+							"<span><b>Numero 	: </b><i>" + Numero 	+ "</i></span><br/>" +
+							"</div><br/><div class='clear'></div>");
+					});
+					}
+				});
+				});
+			</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*echo "<div class='persona' ><span><b>Nome:</b><i>" . $row[Nome]. "</i></span><br/>" . "<span><b>Cognome : </b><i>" . $row[Cognome]. "</i></span><br/>" ."<span><b>Numero 	: </b><i>" . $row[Numero]. "</i></span><br/>" ."</div><br/><div class='clear'></div>";*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+else {
+    //Messaggio
+    $msg = "nessun risultato trovato";
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo "<center><button class='button' style='vertical-align:middle' onclick='form()'><span>Aggiungi contatto</span></button></center></div>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
