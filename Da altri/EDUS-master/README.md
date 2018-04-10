@@ -1,2 +1,0 @@
-# EDUS
-EDUS Project
